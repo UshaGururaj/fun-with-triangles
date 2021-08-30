@@ -1,7 +1,7 @@
 const sideInputs = document.querySelectorAll(".side-input");
 const hypothenuseBtn = document.querySelector("#hypotenuse-btn");
 const output = document.querySelector("#output");
-output.style.display="none";
+// output.style.display="none";
 function calculateSumOfSquares(a,b){
     const sumOfSquares = a*a + b*b ;
     return sumOfSquares;
@@ -17,7 +17,7 @@ function calculateHypotenuse(){
         output.style.display="none";
         const sumOfSquares = calculateSumOfSquares(Number(sideInputs[0].value),Number(sideInputs[1].value));
         const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
-        setMessage("The length of hypotenuse is "+ lengthOfHypotenuse);
+        setMessage("The length of hypotenuse is "+ lengthOfHypotenuse + " cm.");
     }else{
         setMessage("Enter 2 sides of Triangle");
     }

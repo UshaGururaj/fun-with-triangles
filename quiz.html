@@ -29,9 +29,10 @@
         </ul>
     </nav>
     <h1>Triangle quiz</h1>
+    <!-- <div class="container"> -->
     <form class="quiz-form">
         <div class="question-container">
-            <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+            <p class="question">What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
             <label>
                 <input type="radio" name="question1" value="45°">45°
             </label>
@@ -54,12 +55,24 @@
                 <input type="radio" name="question2" value="right angled">right angled
             </label>
         </div>
+        <div class="question-container">
+            <p>A triangle can have </p>
+            <label>
+                <input type="radio" name="question3" value="one right angle">one right angle
+            </label>
+            <label>
+                <input type="radio" name="question3" value="two right angles">two right angles
+            </label>
+        </div>
     </form>
     <button id="submit-btn">Submit Button</button>
     <div id="output"></div>
+    
     <footer class="footer">
-        <div class="footer-header">About</div>    
+        <div class="footer-header">Note :</div> 
+        <p>For each correct answer you will get 1 point.</p>   
     </footer>
+    <!-- </div> -->
     <script src="./quiz.js"></script>
 </body>
 </html>

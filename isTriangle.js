@@ -9,9 +9,9 @@ function isTriangleCheckFunction(){
       sum = Number(angles[0].value)+Number(angles[1].value)+Number(angles[2].value);
       if(sum != 180) 
       {
-          showErrorMessage("Sum of all angles should be equal to 180.");
+          showErrorMessage("Oh Oh! The angle doesn't form a triangle.Sum of all angles should be equal to 180.");
       }else{
-          showErrorMessage("Angles form a Triangle.");
+          showErrorMessage("Hey!Angles form a Triangle.");
       } 
   }else{
       showErrorMessage("Please enter all 3 Angles.");

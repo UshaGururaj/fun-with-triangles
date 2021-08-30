@@ -15,6 +15,16 @@ body {
 h1{
     text-align: center;
 }
+/* .container{
+    width:100%;
+    margin:auto;
+} */
+.question-container{
+    /* width:100%;
+    margin:auto; */
+    text-align: center;
+    padding:1rem;
+}
 .nav {
     background-color: var(--primary-color);
     /* color: white; */
@@ -23,6 +33,8 @@ h1{
 }
 .nav .nav-brand {
     font-weight: bold;
+    font-size: xx-large;
+    padding:0rem 2rem;
 }
 .nav .nav-pills {
     text-align: right;
@@ -35,12 +47,33 @@ h1{
 .nav .link-active {
     font-weight: bold;
 }
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
 .list-non-bullet {
     list-style: none;
 }
 .list-item-inline {
     display: inline;
     padding: 0rem 0.5rem;
+}
+#submit-btn{
+    display:block;
+    margin-top: 1rem;
+    margin:auto;
+    background:transparent;
+    color:var(--primary-light);
+    border-color: var(--primary-light);
+    border-width: medium;
+    padding:0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+#output{
+    text-align: center;
+    padding:2rem;
+    font-size: x-large;
 }
 .footer {
     background-color: var(--primary-color);

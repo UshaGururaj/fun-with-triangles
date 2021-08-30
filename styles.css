@@ -1,9 +1,4 @@
 :root {
-    /* --primary-color: #FF8863; */
-    /* --primary-color: #FCA5A5; */
-    /* --primary-color: #FECACA; */
-    /* --dark-gray: #374151; */
-    /* --dark-gray: #4B5563; */
     --primary-color:#a0a1a5;
     --dark-gray: #6B7280;
     --off-white: #F3F4F6;
@@ -23,6 +18,8 @@ h1{
 }
 .nav .nav-brand {
     font-weight: bold;
+    font-size: xx-large;
+    padding:0rem 2rem;
 }
 .nav .nav-pills {
     text-align: right;

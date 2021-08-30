@@ -2,7 +2,7 @@ const baseInput = document.querySelector(".input-base");
 const heightInput = document.querySelector(".input-height");
 const areaBtn = document.querySelector("#area-btn");
 const output = document.querySelector("#output");
-output.style.display = "none";
+
 function showMessage(message){
     output.style.display = "block";
     output.innerText = message;
@@ -13,6 +13,7 @@ function calculateProduct(a,b){
 }
 function checkArea(){
     if(Number(baseInput.value)&&Number(heightInput.value)){
+        output.style.display = "none";
         const productOfBaseHeight = calculateProduct(Number(baseInput.value),Number(heightInput.value));
         const area = productOfBaseHeight/2;
         showMessage("The area of triangle is " + area + " cm².");
