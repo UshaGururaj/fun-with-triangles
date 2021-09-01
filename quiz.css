@@ -1,27 +1,15 @@
 :root {
-    /* --primary-color: #FF8863; */
-    /* --primary-color: #FCA5A5; */
-    /* --primary-color: #FECACA; */
-    /* --dark-gray: #374151; */
-    /* --dark-gray: #4B5563; */
     --primary-color:#a0a1a5;
     --dark-gray: #6B7280;
     --off-white: #F3F4F6;
 }
 body {
-    /* font-family: 'Montserrat', sans-serif; */
     margin: 0rem;
 }
 h1{
     text-align: center;
 }
-/* .container{
-    width:100%;
-    margin:auto;
-} */
 .question-container{
-    /* width:100%;
-    margin:auto; */
     text-align: center;
     padding:1rem;
 }
