@@ -68,14 +68,35 @@ h1{
     border-radius:0.5rem;
     border: 1px solid var(--primary-color);
 }
-.footer {
-    background-color: var(--primary-color);
-    padding: 2rem 1rem;
-    text-align: center;
-    color: black;
-    border-top-right-radius: 1rem;
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
 }
-.footer .footer-header {
+
+.list-item-inline {
+    display: inline;
+    padding: 0.25rem;
+}
+.footer{
+    background-color: var(--primary-color);
+    padding:2rem 0rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.footer .footer-header{
     font-weight: bold;
     font-size: large;
+    padding-inline-start:0px;
+}
+.footer .link{
+    color:black;
+}
+
+.footer ul{
+    padding-left:0px;
+}
+
+.footer-icon{
+    width:2rem;
 }
