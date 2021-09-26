@@ -14,10 +14,17 @@ function setMessage(message){
 
 function calculateHypotenuse(){
     if(Number(sideInputs[0].value)&&Number(sideInputs[1].value)){
-        output.style.display="none";
-        const sumOfSquares = calculateSumOfSquares(Number(sideInputs[0].value),Number(sideInputs[1].value));
-        const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
-        setMessage("The length of hypotenuse is "+ lengthOfHypotenuse + " cm.");
+
+        if((Number(sideInputs[0].value)<=0) || (Number(sideInputs[1].value)<=0)){
+
+            setMessage("Length of sides should be greater than 0.");
+
+        } else {
+            output.style.display="none";
+            const sumOfSquares = calculateSumOfSquares(Number(sideInputs[0].value),Number(sideInputs[1].value));
+            const lengthOfHypotenuse = Math.sqrt(Number(sumOfSquares));
+            setMessage("The length of hypotenuse is "+ lengthOfHypotenuse + " cm.");
+        }
     }else{
         setMessage("Enter 2 sides of Triangle");
     }
